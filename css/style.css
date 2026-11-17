@@ -30,6 +30,7 @@ html.fonte-grande{font-size:112.5%}
 html.fonte-maior{font-size:125%}
 body{font-family:'Inter',Arial,sans-serif;color:var(--texto);background:var(--branco);line-height:1.6}
 img,video,iframe{max-width:100%;display:block}
+img,video{height:auto} /* mantém a proporção quando a tela é estreita */
 a{color:var(--verde)}
 h1,h2,h3{line-height:1.2;color:var(--verde-escuro)}
 h1{font-size:2.4rem;font-weight:800}
