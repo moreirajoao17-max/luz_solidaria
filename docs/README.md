@@ -7,9 +7,9 @@ Site da ONG fictícia **Luz Solidária**, criado para a disciplina de **Desenvol
 ## Links
 
 | Item | Endereço |
-|---|---|
-| Site publicado (HTTPS) | `[COLOCAR A URL DO RAILWAY, ex: https://luz-solidaria-production.up.railway.app]` |
-| Repositório no GitHub | `[COLOCAR O LINK DO REPOSITÓRIO]` |
+|---|---| 
+| Site publicado (HTTPS) | https://luzsolidaria-production.up.railway.app |
+| Repositório no GitHub | https://github.com/moreirajoao17-max/luz_solidaria |
 
 ## Objetivo
 
