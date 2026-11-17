@@ -77,6 +77,11 @@ As partes entre `[colchetes]` devem ser completadas pela equipe com o que aconte
 - O que fiz: HTML, acessibilidade, layout, JavaScript, slides e publicação no Railway.
 - O que aprendi: publicar um site com GitHub e Railway.
 - Dificuldade: organizar o site em 10 páginas.
+
+## 17/11/2026 - Lucas Moreira
+- O que fiz: paginas de formulário e artigos em HTML, CSS
+- O que aprendi: tags HTML , JavaScript
+- Dificuldade: acessibilidade e JavaScript
   
 ## Próximos passos
 
