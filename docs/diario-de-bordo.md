@@ -59,9 +59,8 @@ As partes entre `[colchetes]` devem ser completadas pela equipe com o que aconte
   - Pesquisou dados com fonte (IEMA, IBGE, MME) e preços de hospedagem e domínio.
   - Gerou uma trilha instrumental para o áudio e o vídeo.
   - Escreveu os rascunhos desta documentação.
-- **O que a equipe revisou ou corrigiu:** `[completar: o que vocês mudaram nos textos, no código ou nos dados]`
-- **O que a equipe recusou e por quê:** `[completar: pelo menos 1 sugestão da IA que vocês não aceitaram]`
-
+- O que a equipe revisou ou corrigiu: pedimos para tirar as setas do carrossel e voltar ao indicador de antes, tirar o logo do topo e colocar o botão Menu no lugar, corrigir os números da seção "Nossa trajetória" e deixar o site mais fluido.
+- O que a equipe recusou e por quê: recusamos códigos que vinham quebrados, páginas sem sentido para o tema e partes sem necessidade. Só entrou no site o que a equipe testou e entendeu.
 ---
 
 ## Regras que seguimos ao usar IA
@@ -73,10 +72,14 @@ As partes entre `[colchetes]` devem ser completadas pela equipe com o que aconte
 
 ## Aprendizados gerais
 
-- `[completar]`
-
+- Publicar um site com GitHub e Railway e validar o HTML no W3C.
+## 17/11/2026 — João Pedro
+- O que fiz: HTML, acessibilidade, layout, JavaScript, slides e publicação no Railway.
+- O que aprendi: publicar um site com GitHub e Railway.
+- Dificuldade: organizar o site em 10 páginas.
+  
 ## Próximos passos
 
 - Gravar um depoimento real em áudio para substituir a trilha instrumental.
 - Guardar as mensagens do formulário em um banco MySQL no Railway.
-- `[completar]`
+- Registrar o domínio luzsolidaria.org.br (R$ 40/ano no Registro.br), como previsto no orçamento.
