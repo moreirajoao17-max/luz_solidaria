@@ -88,6 +88,10 @@ As partes entre `[colchetes]` devem ser completadas pela equipe com o que aconte
 - O que aprendi: Publicação no GitHub, integração com Railwqy
 - Dificuldade, adaptação de acessibilidade.
 
+## 17/11/2026 -- Danilo Gomes Fernandes
+O que eu fiz: ajudei no Java e no css
+o que eu aprendi: publicar no GitHub 
+dificuldade: javascript
 ## Próximos passos
 
 - Gravar um depoimento real em áudio para substituir a trilha instrumental.
