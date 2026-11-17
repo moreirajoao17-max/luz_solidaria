@@ -8,8 +8,8 @@ Site da ONG fictícia **Luz Solidária**, criado para a disciplina de **Desenvol
 
 | Item | Endereço |
 |---|---|
-| Site publicado (HTTPS) | `[COLOCAR A URL DO RAILWAY, ex: https://luz-solidaria-production.up.railway.app]` |
-| Repositório no GitHub | `[COLOCAR O LINK DO REPOSITÓRIO]` |
+| Site publicado (HTTPS) | https://luzsolidaria-production.up.railway.app |
+| Repositório no GitHub | https://github.com/moreirajoao17-max/luz_solidaria |
 
 ## Objetivo
 
@@ -69,7 +69,7 @@ luz-solidaria/
 
 ## Como rodar
 
-1. Baixe ou clone o repositório: `git clone [LINK DO REPOSITÓRIO]`
+1. Baixe ou clone o repositório: `git clone https://github.com/moreirajoao17-max/luz_solidaria.git`
 2. Abra o arquivo `index.html` no navegador. Não precisa instalar nada.
 3. Para publicar: suba os arquivos para o GitHub (com o `index.html` na raiz) e conecte o repositório ao Railway. Cada push na `main` atualiza o site.
 
