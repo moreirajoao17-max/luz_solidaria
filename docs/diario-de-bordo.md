@@ -82,7 +82,12 @@ As partes entre `[colchetes]` devem ser completadas pela equipe com o que aconte
 - O que fiz: paginas de formulário e artigos em HTML, CSS
 - O que aprendi: tags HTML , JavaScript
 - Dificuldade: acessibilidade e JavaScript
-  
+
+## 17/11/2026 - Grazielle Pinheiro
+- O que eu fiz: Ideias, layouts, HTML
+- O que aprendi: Publicação no GitHub, integração com Railwqy
+- Dificuldade, adaptação de acessibilidade.
+- 
 ## Próximos passos
 
 - Gravar um depoimento real em áudio para substituir a trilha instrumental.
