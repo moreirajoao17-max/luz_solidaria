@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acessibilidade | Luz Solidária</title>
+  <meta name="description" content="Medidas de inclusão para pessoas com deficiência no site e no projeto Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Acessibilidade</p>
+        <h1>Acessibilidade</h1>
+        <p>Medidas de inclusão para pessoas com deficiência, no site e no projeto.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-site">
+      <div class="container">
+        <h2 id="titulo-site">Recursos de acessibilidade deste site</h2>
+        <p class="subtitulo">Seguimos as recomendações das Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.2), nível AA.</p>
+        <div class="grade-3">
+          <article class="card"><h3>🔠 Tamanho do texto</h3><p>Use os botões A-, A e A+ no topo da página. Sua escolha fica salva para a próxima visita.</p></article>
+          <article class="card"><h3>◐ Alto contraste</h3><p>O botão "Alto contraste" troca as cores para fundo preto e texto branco e amarelo. A preferência também fica salva.</p></article>
+          <article class="card"><h3>⌨️ Navegação por teclado</h3><p>Todo o site funciona só com o teclado. O link "Pular para o conteúdo" aparece ao apertar Tab.</p></article>
+          <article class="card"><h3>🔊 Leitores de tela</h3><p>Imagens com texto alternativo, títulos em ordem, formulário com rótulos e mensagens de erro lidas pelo leitor de tela.</p></article>
+          <article class="card"><h3>🎬 Mídia acessível</h3><p>O vídeo tem todo o conteúdo em texto na tela e uma transcrição completa na página de Mídia.</p></article>
+          <article class="card"><h3>📱 Qualquer tela</h3><p>O layout se adapta a celular, tablet e computador, sem perder conteúdo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-teclado">
+      <div class="container">
+        <h2 id="titulo-teclado">Atalhos de teclado</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Como navegar sem mouse</caption>
+            <thead><tr><th scope="col">Tecla</th><th scope="col">O que faz</th></tr></thead>
+            <tbody>
+              <tr><td>Tab</td><td>Vai para o próximo link, botão ou campo</td></tr>
+              <tr><td>Shift + Tab</td><td>Volta para o item anterior</td></tr>
+              <tr><td>Enter</td><td>Abre um link ou aperta um botão</td></tr>
+              <tr><td>Espaço</td><td>Marca uma caixa de seleção ou aperta um botão</td></tr>
+              <tr><td>Esc</td><td>Fecha a imagem ampliada da galeria e o menu no celular</td></tr>
+              <tr><td>Setas ← →</td><td>Trocam o slide do carrossel quando ele está em foco</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-projeto-pcd">
+      <div class="container dividido">
+        <div>
+          <span class="badge">Inclusão no projeto</span>
+          <h2 id="titulo-projeto-pcd">Pessoas com deficiência em primeiro lugar</h2>
+          <ul class="lista-check">
+            <li><strong>Prioridade de ligação</strong> para famílias com pessoas com deficiência, principalmente quem depende de equipamentos elétricos, como cadeiras motorizadas e aparelhos de saúde.</li>
+            <li><strong>Oficinas acessíveis</strong>, com intérprete de Libras, material em letra ampliada e versão em áudio.</li>
+            <li><strong>Instalações sem barreiras</strong>: caminhos firmes e quadros de energia em altura alcançável por cadeirantes.</li>
+            <li><strong>Voluntariado PCD</strong>: pessoas com deficiência participam de todas as frentes, do campo à comunicação.</li>
+          </ul>
+        </div>
+        <img src="img/inclusao-pcd-horta.jpg" alt="Grupo de pessoas com e sem deficiência, incluindo um cadeirante e uma pessoa com prótese na perna, trabalhando juntas em uma horta" width="899" height="941" loading="lazy">
+      </div>
+    </section>
+
+    <section class="secao secao-cinza">
+      <div class="container">
+        <div class="chamada">
+          <h2>Encontrou alguma barreira?</h2>
+          <p>Conte para a gente o que dificultou seu acesso. Vamos corrigir.</p>
+          <a href="contato.html" class="btn btn-amarelo">Relatar um problema de acessibilidade</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

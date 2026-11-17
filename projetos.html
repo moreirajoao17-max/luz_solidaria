@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Luz Solidária</title>
+  <meta name="description" content="Projetos de energia solar comunitária, educação e inclusão da Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Projetos</p>
+        <h1>Projetos</h1>
+        <p>Do campo solar à sala de aula: conheça as frentes de trabalho da Luz Solidária.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-etapas">
+      <div class="container">
+        <h2 id="titulo-etapas">Como funciona na prática</h2>
+        <p class="subtitulo">Um projeto único, em 3 etapas: do piloto à escala nacional.</p>
+        <div class="grade-3">
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">🚀</div>
+            <h3>1. Projeto piloto</h3>
+            <p>3 campos com 35 painéis em 200 m² cada, levando energia off-grid para onde a rede nunca chegou.</p>
+            <div class="card-info"><span>📍 Fase atual: em operação</span><span>👥 15 famílias por campo</span></div>
+          </article>
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">💡</div>
+            <h3>2. Impacto real</h3>
+            <p>Fim do lampião: geladeira ligada, crianças estudando à noite e mais segurança. Custo zero para quem recebe.</p>
+            <div class="card-info"><span>📍 45 famílias no total</span><span>⚡ 2,1 km de micro-rede</span></div>
+          </article>
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">🌎</div>
+            <h3>3. Expansão</h3>
+            <p>O piloto é a prova. O objetivo é replicar o modelo em cada comunidade rural sem acesso à rede elétrica.</p>
+            <div class="card-info"><span>📍 Próxima fase</span><span>👥 Modelo replicável</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-fluxo">
+      <div class="container centro">
+        <h2 id="titulo-fluxo">O sistema off-grid em 5 etapas</h2>
+        <figure>
+          <img src="img/fluxo-sistema-offgrid.jpg" alt="Diagrama do sistema: 1 campo solar com 35 painéis, 2 controlador e banco de baterias de 30 kWh, 3 inversor off-grid, 4 micro-rede isolada de 0,7 km, 5 casa do usuário com geladeira e iluminação LED" width="1600" height="1067" loading="lazy" style="border-radius:14px;margin:0 auto">
+          <figcaption class="fonte" style="margin-top:10px">Fluxo da energia: campo solar → baterias → inversor → micro-rede → casa. Fonte: diagrama elaborado pela equipe.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-frentes">
+      <div class="container">
+        <h2 id="titulo-frentes">Nossas frentes de trabalho</h2>
+        <div class="grade-2">
+          <article class="card card-img">
+            <img src="img/equipe-instalacao.jpg" alt="Voluntários com coletes montando painéis solares no campo" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <h3>Campos Solares Comunitários</h3>
+              <p>Instalação e manutenção das fazendas solares em terrenos ociosos, com micro-rede para 15 famílias por campo.</p>
+            </div>
+          </article>
+          <article class="card card-img">
+            <img src="img/oficina-comunidade.jpg" alt="Voluntária explica em um quadro os benefícios da energia elétrica para moradores sentados" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <h3>Oficina Energia Segura</h3>
+              <p>Encontros na comunidade para ensinar o uso seguro e econômico da energia, com material em letra ampliada e em áudio.</p>
+            </div>
+          </article>
+          <article class="card card-img">
+            <img src="img/familia-estudando.jpg" alt="Família estudando à noite em volta da mesa, com a geladeira aberta e uma lâmpada acesa" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <h3>Luz para Estudar</h3>
+              <p>Iluminação LED nas casas para que crianças e adultos possam estudar à noite.</p>
+            </div>
+          </article>
+          <article class="card card-img">
+            <img src="img/inclusao-pcd-horta.jpg" alt="Pessoas com e sem deficiência, incluindo um cadeirante, cuidando juntas de uma horta" width="899" height="941" loading="lazy">
+            <div class="card-corpo">
+              <h3>Inclusão PCD</h3>
+              <p>Prioridade de ligação para famílias com pessoas com deficiência e participação de voluntários PCD em todas as frentes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

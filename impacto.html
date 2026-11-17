@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impacto | Luz Solidária</title>
+  <meta name="description" content="Dados, tabelas e resultados do projeto Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html" aria-current="page">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Impacto</p>
+        <h1>Impacto</h1>
+        <p>Dados, tabelas e resultados: do primeiro teste à operação dos 3 campos.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-tabela">
+      <div class="container">
+        <h2 id="titulo-tabela">Resultados do piloto</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Comparativo entre o piloto inicial e a operação atual</caption>
+            <thead>
+              <tr><th scope="col">Métrica</th><th scope="col">Piloto inicial</th><th scope="col">Operação atual (3 campos)</th><th scope="col">Crescimento</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row" style="background:none;color:inherit">Famílias com energia gratuita</th><td>15</td><td><strong>45</strong></td><td>+200%</td></tr>
+              <tr><th scope="row" style="background:none;color:inherit">Campos solares em operação</th><td>1 (35 painéis / 200 m²)</td><td><strong>3 (105 painéis / 600 m²)</strong></td><td>+200%</td></tr>
+              <tr><th scope="row" style="background:none;color:inherit">Potência instalada</th><td>19,25 kWp</td><td><strong>57,75 kWp</strong></td><td>+200%</td></tr>
+              <tr><th scope="row" style="background:none;color:inherit">Alcance da micro-rede</th><td>0,7 km</td><td><strong>2,1 km</strong></td><td>+200%</td></tr>
+              <tr><th scope="row" style="background:none;color:inherit">Geração média por dia</th><td>~45 kWh</td><td><strong>~135 kWh</strong></td><td>Energia limpa</td></tr>
+              <tr><th scope="row" style="background:none;color:inherit">Energia por família</th><td>0 h (lampião)</td><td><strong>8 h+ de energia, geladeira e estudo</strong></td><td>Impacto direto</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fonte" style="margin-top:12px">Dados do projeto (simulação acadêmica). Painéis de 550 W: 35 × 550 W = 19,25 kWp por campo.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-antes">
+      <div class="container">
+        <h2 id="titulo-antes">Antes e depois para as famílias</h2>
+        <div class="grade-2">
+          <article class="card">
+            <h3>Antes</h3>
+            <ul class="lista-check">
+              <li>Lampião a querosene e velas à noite</li>
+              <li>Sem geladeira: alimentos estragavam</li>
+              <li>Crianças sem conseguir estudar depois do pôr do sol</li>
+              <li>Gasto com combustível e risco de incêndio</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Depois</h3>
+            <ul class="lista-check">
+              <li>Iluminação LED em todos os cômodos</li>
+              <li>Geladeira ligada e comida conservada</li>
+              <li>Estudo à noite e celular carregado</li>
+              <li>Custo zero e energia 100% renovável</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-brasil">
+      <div class="container">
+        <h2 id="titulo-brasil">O contexto no Brasil</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Acesso à energia elétrica no Brasil: dados oficiais e de pesquisa</caption>
+            <thead><tr><th scope="col">Indicador</th><th scope="col">Dado</th><th scope="col">Fonte</th></tr></thead>
+            <tbody>
+              <tr><td>Domicílios brasileiros com energia elétrica</td><td>99,8%</td><td>IBGE, Censo 2022 (via <a href="https://exame.com/esg/amazonia-legal-energia-quase-universal-mas-ainda-distante-de-ser-igualitaria/">Exame</a>)</td></tr>
+              <tr><td>Pessoas sem energia elétrica na Amazônia Legal</td><td>990.103</td><td>IEMA (via <a href="https://portalamazonia.com/cidades/um-milhao-de-brasileiros-estao-sem-energia-eletrica-na-amazonia-aponta-estudo/">Portal Amazônia</a>)</td></tr>
+              <tr><td>Escolas sem energia em regiões remotas da Amazônia Legal</td><td>993</td><td>MME, julho de 2024 (via <a href="https://cenarioenergia.com.br/2025/03/20/programa-luz-para-todos-falha-em-2024-energia-nao-chega-a-milhares-de-brasileiros-na-amazonia-legal/">Cenário Energia</a>)</td></tr>
+              <tr><td>Unidades de saúde sem energia nessas regiões</td><td>217</td><td>MME, julho de 2024 (via Cenário Energia)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

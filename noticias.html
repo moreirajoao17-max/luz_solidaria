@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícias | Luz Solidária</title>
+  <meta name="description" content="Notícias do projeto Luz Solidária e sobre energia no Brasil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Notícias</p>
+        <h1>Notícias</h1>
+        <p>Novidades do projeto e informações sobre o acesso à energia no Brasil.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-noticias">
+      <div class="container">
+        <h2 id="titulo-noticias">Últimas notícias</h2>
+        <div class="filtros" role="group" aria-label="Filtrar notícias por categoria">
+          <button type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+          <button type="button" data-filtro="projeto" aria-pressed="false">Projeto</button>
+          <button type="button" data-filtro="comunidade" aria-pressed="false">Comunidade</button>
+          <button type="button" data-filtro="voluntariado" aria-pressed="false">Voluntariado</button>
+          <button type="button" data-filtro="brasil" aria-pressed="false">Energia no Brasil</button>
+        </div>
+        <p id="contador-noticias" class="fonte" aria-live="polite">Mostrando 6 notícias.</p>
+        <div class="noticias-grade">
+          <article class="card card-img noticia" data-categoria="projeto">
+            <img src="img/campo-solar-placa.jpg" alt="Placa do campo solar comunitário ao lado dos painéis" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Projeto</span> · <time datetime="2026-10-20">20/10/2026</time>
+              <h3>Terceiro campo solar entra em operação</h3>
+              <p>Com mais 35 painéis, o projeto chega a 45 famílias atendidas.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>O terceiro campo foi ligado depois de dois fins de semana de mutirão. Com ele, a micro-rede da Luz Solidária chega a 2,1 km e a geração média passa de 135 kWh por dia. Todas as famílias do raio de 0,7 km do novo campo já estão com energia.</p>
+              </details>
+            </div>
+          </article>
+          <article class="card card-img noticia" data-categoria="comunidade">
+            <img src="img/familia-estudando.jpg" alt="Família estudando à noite com luz em casa" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Comunidade</span> · <time datetime="2026-09-12">12/09/2026</time>
+              <h3>A primeira noite de estudo com luz</h3>
+              <p>Famílias contam como a energia mudou a rotina das crianças.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>Antes, a lição de casa tinha que acabar antes do pôr do sol. Agora, com iluminação LED, as crianças estudam à noite e os adultos também voltaram a estudar. A geladeira ligada conserva os alimentos por mais tempo.</p>
+              </details>
+            </div>
+          </article>
+          <article class="card card-img noticia" data-categoria="voluntariado">
+            <img src="img/equipe-instalacao.jpg" alt="Voluntários montando painéis solares" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Voluntariado</span> · <time datetime="2026-08-30">30/08/2026</time>
+              <h3>Mutirão reúne voluntários técnicos</h3>
+              <p>Estudantes e profissionais ajudaram a montar 35 painéis.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>O mutirão teve voluntários de elétrica, engenharia e TI, além de moradores da comunidade. Quer participar do próximo? Preencha o formulário na página de Contato.</p>
+              </details>
+            </div>
+          </article>
+          <article class="card card-img noticia" data-categoria="voluntariado">
+            <img src="img/oficina-comunidade.jpg" alt="Oficina com moradores sobre o uso da energia" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Voluntariado</span> · <time datetime="2026-08-02">02/08/2026</time>
+              <h3>Oficina Energia Segura com intérprete de Libras</h3>
+              <p>Encontro ensinou o uso seguro e econômico da energia.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>A oficina teve material em letra ampliada, versão em áudio e intérprete de Libras, para que todas as pessoas da comunidade pudessem participar.</p>
+              </details>
+            </div>
+          </article>
+          <article class="card card-img noticia" data-categoria="brasil">
+            <img src="img/vista-aerea-comunidade.jpg" alt="Vista aérea de comunidade rural com painéis solares" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Energia no Brasil</span> · <time datetime="2025-03-20">20/03/2025</time>
+              <h3>Escolas e postos de saúde ainda sem energia na Amazônia</h3>
+              <p>993 escolas e 217 unidades de saúde seguiam sem energia em regiões remotas.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>Segundo dados do Ministério de Minas e Energia repassados ao Idec em julho de 2024, 993 escolas e 217 unidades de saúde de regiões remotas da Amazônia Legal seguiam sem acesso à energia elétrica. Fonte: <a href="https://cenarioenergia.com.br/2025/03/20/programa-luz-para-todos-falha-em-2024-energia-nao-chega-a-milhares-de-brasileiros-na-amazonia-legal/">Cenário Energia</a>.</p>
+              </details>
+            </div>
+          </article>
+          <article class="card card-img noticia" data-categoria="brasil">
+            <img src="img/paineis-por-do-sol.jpg" alt="Painéis solares ao pôr do sol" width="1280" height="853" loading="lazy">
+            <div class="card-corpo">
+              <span class="tag">Energia no Brasil</span> · <time datetime="2025-09-19">19/09/2025</time>
+              <h3>Energia quase universal, mas desigual</h3>
+              <p>99,8% dos domicílios têm energia, mas a falta se concentra na Amazônia Legal.</p>
+              <details>
+                <summary>Ler mais</summary>
+                <p>Segundo o IBGE, 99,8% dos domicílios do país já tinham eletricidade em 2022. A falta de energia que resta está concentrada em regiões isoladas, principalmente na Amazônia Legal. Fonte: <a href="https://exame.com/esg/amazonia-legal-energia-quase-universal-mas-ainda-distante-de-ser-igualitaria/">Exame</a>.</p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mídia | Luz Solidária</title>
+  <meta name="description" content="Vídeo, áudio e mapa do projeto Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html" aria-current="page">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Mídia</p>
+        <h1>Mídia</h1>
+        <p>Vídeo, áudio e mapa: veja e ouça o projeto Luz Solidária.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-video">
+      <div class="container midia-grade">
+        <div>
+          <h2 id="titulo-video">Vídeo: Do Sol para o Lar</h2>
+          <video controls poster="img/video-capa.jpg" preload="metadata" width="1280" height="720">
+            <source src="assets/video-luz-solidaria.mp4" type="video/mp4">
+            Seu navegador não reproduz vídeos. <a href="assets/video-luz-solidaria.mp4">Baixe o vídeo</a>.
+          </video>
+          <p class="fonte" style="margin-top:8px">Duração: 48 segundos. Vídeo produzido pela equipe com as imagens do projeto.</p>
+          <details>
+            <summary>Ler a transcrição do vídeo</summary>
+            <ol>
+              <li>Abertura: "Do Sol para o Lar. Energia solar comunitária para quem a rede nunca alcançou."</li>
+              <li>O problema: muitas famílias rurais ainda vivem onde a rede elétrica nunca chegou.</li>
+              <li>A solução: o Luz Solidária cria fazendas solares isoladas (off-grid) em terrenos ociosos.</li>
+              <li>Como funciona: cada campo tem 35 painéis em 200 m², bateria central e micro-rede própria.</li>
+              <li>Como funciona: um campo leva energia para 15 famílias em um raio de 0,7 km.</li>
+              <li>Custo zero: a família não paga a instalação nem a conta de luz.</li>
+              <li>O impacto: geladeira ligada, crianças estudando à noite e mais segurança.</li>
+              <li>Hoje: 3 campos, 105 painéis e 45 famílias com energia limpa.</li>
+              <li>Voluntários ensinam as famílias a usar a energia com segurança.</li>
+              <li>O futuro: levar esse modelo a cada comunidade rural sem rede.</li>
+              <li>Final: "Seja um voluntário. Ajude a levar luz para quem nunca teve."</li>
+            </ol>
+          </details>
+        </div>
+        <div>
+          <div class="midia-bloco">
+            <h2>Áudio: trilha do projeto</h2>
+            <p>Trilha instrumental calma, com sons de natureza, usada no vídeo.</p>
+            <audio controls preload="metadata">
+              <source src="assets/trilha-luz-solidaria.mp3" type="audio/mpeg">
+              Seu navegador não reproduz áudio. <a href="assets/trilha-luz-solidaria.mp3">Baixe o áudio</a>.
+            </audio>
+            <p class="fonte">Trilha instrumental gerada por computador para o projeto (48 s, sem letra).</p>
+          </div>
+          <div class="midia-bloco">
+            <h2>Para saber mais</h2>
+            <ul class="lista-check">
+              <li><a href="https://idec.org.br/materia/amazonia-legal-no-escuro">Amazônia Legal no escuro (Idec)</a></li>
+              <li><a href="https://portalamazonia.com/cidades/um-milhao-de-brasileiros-estao-sem-energia-eletrica-na-amazonia-aponta-estudo/">Um milhão de brasileiros sem energia (Portal Amazônia)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza mapa" aria-labelledby="titulo-mapa">
+      <div class="container">
+        <h2 id="titulo-mapa">Onde a falta de energia é maior</h2>
+        <p class="subtitulo">A maior parte dos brasileiros sem energia elétrica vive na Amazônia Legal. O mapa abaixo mostra a região.</p>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0%2C-18.0%2C-44.0%2C5.5&amp;layer=mapnik" title="Mapa da região da Amazônia Legal (OpenStreetMap)" loading="lazy"></iframe>
+        <p class="fonte" style="margin-top:8px">Mapa: © colaboradores do <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

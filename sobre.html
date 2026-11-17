@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre nós | Luz Solidária</title>
+  <meta name="description" content="História, missão, visão e valores da Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Sobre nós</p>
+        <h1>Sobre nós</h1>
+        <p>História, missão, visão e valores da Luz Solidária.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-historia">
+      <div class="container dividido">
+        <div>
+          <span class="badge">Nossa história</span>
+          <h2 id="titulo-historia">Energia onde a rede nunca chegou</h2>
+          <p>A Luz Solidária nasceu de uma pergunta simples: por que, em pleno século XXI, ainda existem famílias que estudam à luz de lampião? Somos uma iniciativa estudantil, pensada para funcionar em parceria com o poder público, que cria Fazendas Solares Isoladas (off-grid) em terrenos ociosos.</p>
+          <p>Cada fazenda tem bateria central e uma micro-rede própria, que leva energia pela primeira vez a famílias rurais sem acesso à distribuidora. Começamos com um campo piloto e hoje operamos três.</p>
+        </div>
+        <img src="img/fazenda-solar-aerea.jpg" alt="Vista aérea de uma fazenda solar ao lado de casas rurais, ao pôr do sol" width="1280" height="853" loading="lazy">
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-mvv">
+      <div class="container">
+        <h2 id="titulo-mvv" class="centro">Missão, visão e valores</h2>
+        <div class="grade-3">
+          <article class="card">
+            <h3>◎ Missão</h3>
+            <p>Levar energia limpa e gratuita para famílias rurais sem distribuidora, com fazendas solares isoladas.</p>
+          </article>
+          <article class="card">
+            <h3>👁 Visão</h3>
+            <p>Ser um modelo replicável de geração isolada, atendendo o máximo de famílias com poucos campos.</p>
+          </article>
+          <article class="card">
+            <h3>♥ Valores</h3>
+            <ul class="lista-check">
+              <li><strong>Acesso:</strong> energia é um direito.</li>
+              <li><strong>Autonomia:</strong> sistema 100% off-grid.</li>
+              <li><strong>Comunidade:</strong> um campo beneficia 15 famílias.</li>
+              <li><strong>Sustentabilidade:</strong> trocar diesel e lampião pelo sol.</li>
+              <li><strong>Inclusão:</strong> ninguém fica para trás, com ou sem deficiência.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-linha">
+      <div class="container">
+        <h2 id="titulo-linha">Nossa trajetória</h2>
+        <div class="passos">
+          <div class="passo"><span class="passo-num">1</span><div><b>A ideia</b><span>Estudo das comunidades sem rede e do modelo off-grid.</span></div></div>
+          <div class="passo"><span class="passo-num">2</span><div><b>O piloto</b><span>1 campo, 35 painéis e 15 famílias com energia.</span></div></div>
+          <div class="passo"><span class="passo-num">3</span><div><b>A expansão</b><span>3 campos, 105 painéis e 45 famílias atendidas.</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

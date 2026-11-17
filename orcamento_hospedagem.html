@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orçamento de hospedagem e domínio | Luz Solidária</title>
+  <meta name="description" content="Relatório comparativo de hospedagem e domínio para o site Luz Solidária.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html" aria-current="page">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Orçamento de hospedagem e domínio</p>
+        <h1>Orçamento de hospedagem e domínio</h1>
+        <p>Comparativo de 3 hospedagens e 3 domínios, com a justificativa da nossa escolha.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-hosp">
+      <div class="container">
+        <h2 id="titulo-hosp">Comparativo de hospedagens</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Hospedagens pesquisadas (valores consultados em novembro de 2026)</caption>
+            <thead><tr><th scope="col">Critério</th><th scope="col">Railway (escolhida)</th><th scope="col">GitHub Pages</th><th scope="col">Netlify</th></tr></thead>
+            <tbody>
+              <tr><td>Plano gratuito</td><td>Trial com US$ 5 de crédito por 30 dias; depois, plano Free com US$ 1 de recursos por mês</td><td>Grátis para repositórios públicos</td><td>Free com 300 créditos por mês</td></tr>
+              <tr><td>Plano pago</td><td>Hobby: US$ 5/mês (Pro: US$ 20/mês)</td><td>Não tem plano pago próprio</td><td>Personal: US$ 9/mês (Pro: US$ 20/mês)</td></tr>
+              <tr><td>HTTPS</td><td>Automático</td><td>Automático</td><td>Automático</td></tr>
+              <tr><td>Deploy pelo GitHub</td><td>Sim, a cada push na main</td><td>Sim</td><td>Sim</td></tr>
+              <tr><td>Banco de dados / back-end</td><td>Sim (MySQL e back-end)</td><td>Não, só site estático</td><td>Funções; banco limitado</td></tr>
+              <tr><td>Limites</td><td>Crédito de uso; 0,5 GB de RAM no Free</td><td>Site de até 1 GB; 100 GB de tráfego por mês</td><td>Créditos gastos com tráfego e deploys</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fonte" style="margin-top:10px">Fontes: <a href="https://docs.railway.com/pricing">Railway Docs</a>, <a href="https://docs.github.com/pages/getting-started-with-github-pages/github-pages-limits">GitHub Docs</a> e <a href="https://www.netlify.com/pricing/">Netlify</a>. Preços em dólar mudam com o câmbio e podem ser alterados pelas empresas.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-dom">
+      <div class="container">
+        <h2 id="titulo-dom">Comparativo de domínios</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Domínios pesquisados para a ONG</caption>
+            <thead><tr><th scope="col">Domínio</th><th scope="col">Onde registrar</th><th scope="col">Preço</th><th scope="col">Observação</th></tr></thead>
+            <tbody>
+              <tr class="destaque-linha"><td>luzsolidaria.org.br</td><td>Registro.br</td><td>R$ 40,00/ano</td><td>Ideal para ONG; exige CNPJ de entidade sem fins lucrativos</td></tr>
+              <tr><td>luzsolidaria.com.br</td><td>Registro.br</td><td>R$ 40,00/ano</td><td>Exige CPF ou CNPJ; preço igual na renovação</td></tr>
+              <tr><td>luzsolidaria.org</td><td>Homehost</td><td>R$ 69,00 no 1º ano</td><td>Internacional; confira o preço de renovação</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fonte" style="margin-top:10px">Fontes: <a href="https://www.homehost.com.br/blog/registro-de-dominios/quanto-custa-um-dominio">Homehost</a> e <a href="https://registro.br/">Registro.br</a>. A disponibilidade de cada nome deve ser conferida no momento do registro.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-custo">
+      <div class="container">
+        <h2 id="titulo-custo">Custo estimado</h2>
+        <div class="tabela-rolagem">
+          <table>
+            <caption>Quanto custaria manter o site</caption>
+            <thead><tr><th scope="col">Cenário</th><th scope="col">Hospedagem</th><th scope="col">Domínio</th><th scope="col">Total no 1º ano</th></tr></thead>
+            <tbody>
+              <tr class="destaque-linha"><td>Projeto acadêmico (agora)</td><td>Railway Trial/Free: US$ 0</td><td>Endereço grátis .up.railway.app</td><td>R$ 0,00</td></tr>
+              <tr><td>ONG em funcionamento</td><td>Railway Hobby: US$ 5 × 12 = US$ 60</td><td>luzsolidaria.org.br: R$ 40</td><td>US$ 60 + R$ 40</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-justificativa">
+      <div class="container">
+        <h2 id="titulo-justificativa">Justificativa da escolha</h2>
+        <ul class="lista-check">
+          <li><strong>Railway</strong> é a hospedagem usada na disciplina e publica o site sozinha a cada push na branch main do GitHub, com HTTPS automático.</li>
+          <li>É a única das três que já permite um <strong>back-end com banco MySQL</strong>, que poderá guardar as mensagens do formulário no futuro.</li>
+          <li>Para o projeto acadêmico, o <strong>Trial e o plano Free</strong> bastam, então o custo agora é zero.</li>
+          <li>Quando a ONG tiver CNPJ, o domínio <strong>luzsolidaria.org.br</strong> é o mais adequado e custa R$ 40 por ano, sem aumento na renovação.</li>
+          <li><strong>Sustentabilidade:</strong> reduzimos o peso das imagens de cerca de 16 MB para 2,6 MB, o que gasta menos dados e menos energia a cada visita. Antes de contratar, a equipe vai conferir se o provedor usa energia renovável no <a href="https://www.thegreenwebfoundation.org/">Green Web Foundation</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

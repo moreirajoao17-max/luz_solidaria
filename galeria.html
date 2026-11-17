@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria | Luz Solidária</title>
+  <meta name="description" content="Galeria de imagens do projeto Luz Solidária, com legendas e fontes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="trilha"><a href="index.html">Início</a> › Galeria</p>
+        <h1>Galeria</h1>
+        <p>Do campo comunitário à luz acesa à noite. Clique em uma imagem para ampliar.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-galeria">
+      <div class="container">
+        <h2 id="titulo-galeria" class="visualmente-oculto">Fotos do projeto</h2>
+        <div class="galeria-grade">
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/campo-solar-1.jpg" data-legenda="Um dos três campos: 35 painéis em 200 m²." aria-label="Ampliar imagem: Campo solar comunitário com painéis e o quadro de controle">
+              <img src="img/campo-solar-1.jpg" alt="Campo solar comunitário com painéis e o quadro de controle" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Um dos três campos: 35 painéis em 200 m².<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/equipe-instalacao.jpg" data-legenda="Mutirão de instalação com voluntários técnicos." aria-label="Ampliar imagem: Voluntários com coletes montando painéis solares">
+              <img src="img/equipe-instalacao.jpg" alt="Voluntários com coletes montando painéis solares" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Mutirão de instalação com voluntários técnicos.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/campo-solar-2.jpg" data-legenda="Campo instalado em terreno ocioso, perto das casas." aria-label="Ampliar imagem: Painéis solares cercados em um terreno rural com casas ao fundo">
+              <img src="img/campo-solar-2.jpg" alt="Painéis solares cercados em um terreno rural com casas ao fundo" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Campo instalado em terreno ocioso, perto das casas.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/familia-estudando.jpg" data-legenda="Primeira noite de estudo com luz em casa." aria-label="Ampliar imagem: Família estudando à noite com a geladeira aberta e uma lâmpada acesa">
+              <img src="img/familia-estudando.jpg" alt="Família estudando à noite com a geladeira aberta e uma lâmpada acesa" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Primeira noite de estudo com luz em casa.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/familia-varanda-noite.jpg" data-legenda="Varanda iluminada: mais segurança à noite." aria-label="Ampliar imagem: Família reunida na varanda iluminada, em noite de lua cheia">
+              <img src="img/familia-varanda-noite.jpg" alt="Família reunida na varanda iluminada, em noite de lua cheia" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Varanda iluminada: mais segurança à noite.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/oficina-comunidade.jpg" data-legenda="Oficina Energia Segura na comunidade." aria-label="Ampliar imagem: Voluntária explica em um quadro os benefícios da energia para moradores">
+              <img src="img/oficina-comunidade.jpg" alt="Voluntária explica em um quadro os benefícios da energia para moradores" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Oficina Energia Segura na comunidade.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/celebracao-comunidade.jpg" data-legenda="Festa da comunidade com energia limpa." aria-label="Ampliar imagem: Moradores celebram em mesa farta sob cordão de lâmpadas acesas">
+              <img src="img/celebracao-comunidade.jpg" alt="Moradores celebram em mesa farta sob cordão de lâmpadas acesas" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Festa da comunidade com energia limpa.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/inclusao-pcd-horta.jpg" data-legenda="Voluntariado inclusivo com pessoas com deficiência." aria-label="Ampliar imagem: Pessoas com e sem deficiência cuidando juntas de uma horta">
+              <img src="img/inclusao-pcd-horta.jpg" alt="Pessoas com e sem deficiência cuidando juntas de uma horta" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Voluntariado inclusivo com pessoas com deficiência.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="abrir-imagem" data-src="img/fazenda-solar-aerea.jpg" data-legenda="Vista aérea: o campo e as casas atendidas." aria-label="Ampliar imagem: Vista aérea de fazenda solar ao lado de casas rurais ao pôr do sol">
+              <img src="img/fazenda-solar-aerea.jpg" alt="Vista aérea de fazenda solar ao lado de casas rurais ao pôr do sol" width="1280" height="853" loading="lazy">
+            </button>
+            <figcaption>Vista aérea: o campo e as casas atendidas.<small>Fonte: acervo da equipe Luz Solidária (imagem ilustrativa).</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="janela-imagem" id="janela-imagem" aria-label="Imagem ampliada">
+      <button type="button" id="fechar-imagem">Fechar ✕</button>
+      <img src="img/campo-solar-1.jpg" alt="" id="imagem-ampliada">
+      <p id="legenda-ampliada"></p>
+    </dialog>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

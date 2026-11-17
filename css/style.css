@@ -1,0 +1,314 @@
+/* =========================================================
+   LUZ SOLIDÁRIA — folha de estilo única para as 10 páginas
+   Organização:
+   1. Variáveis e base       6. Componentes (cards, botões)
+   2. Acessibilidade         7. Páginas específicas
+   3. Barra de acessibilidade 8. Formulário
+   4. Cabeçalho e menu        9. Alto contraste
+   5. Rodapé                 10. Responsivo (celular/tablet)
+   ========================================================= */
+
+/* ---------- 1. VARIÁVEIS E BASE ---------- */
+:root{
+  --verde:#1a6b2f;
+  --verde-escuro:#0f4a20;
+  --verde-claro:#d1e9b5;
+  --verde-fundo:#f5f7f5;
+  --amarelo:#ffcc00;
+  --texto:#1a2e1a;
+  --texto-suave:#4a5a4a;
+  --branco:#ffffff;
+  --borda:#e3e8e3;
+  --erro:#b3261e;
+  --raio:14px;
+  --sombra:0 4px 20px rgba(0,0,0,.07);
+  --largura:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;font-size:100%}
+html.fonte-grande{font-size:112.5%}
+html.fonte-maior{font-size:125%}
+body{font-family:'Inter',Arial,sans-serif;color:var(--texto);background:var(--branco);line-height:1.6}
+img,video,iframe{max-width:100%;display:block}
+a{color:var(--verde)}
+h1,h2,h3{line-height:1.2;color:var(--verde-escuro)}
+h1{font-size:2.4rem;font-weight:800}
+h2{font-size:1.8rem;font-weight:800;margin-bottom:.6rem}
+h3{font-size:1.15rem;font-weight:700;margin-bottom:.4rem}
+p{margin-bottom:.8rem}
+.container{max-width:var(--largura);margin:0 auto;padding:0 24px}
+.secao{padding:64px 0}
+.secao-cinza{background:var(--verde-fundo)}
+.subtitulo{color:var(--texto-suave);font-size:1.05rem;margin-bottom:28px;max-width:760px}
+.centro{text-align:center}
+.centro .subtitulo{margin-left:auto;margin-right:auto}
+.badge{display:inline-block;background:var(--verde-claro);color:var(--verde-escuro);font-size:.72rem;font-weight:800;letter-spacing:.08em;padding:6px 12px;border-radius:20px;margin-bottom:12px;text-transform:uppercase}
+.fonte{font-size:.82rem;color:var(--texto-suave)}
+
+/* ---------- 2. ACESSIBILIDADE ---------- */
+.pular-conteudo{position:absolute;left:12px;top:-60px;background:var(--amarelo);color:#000;padding:10px 16px;border-radius:6px;font-weight:700;z-index:2000;text-decoration:none}
+.pular-conteudo:focus{top:12px}
+.visualmente-oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--amarelo);outline-offset:3px;box-shadow:0 0 0 6px #000}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* ---------- 3. BARRA DE ACESSIBILIDADE ---------- */
+.barra-acess{background:var(--verde-escuro);color:#fff;font-size:.85rem}
+.barra-acess .container{display:flex;justify-content:flex-end;align-items:center;gap:8px;min-height:38px;flex-wrap:wrap}
+.barra-acess span{margin-right:4px}
+.barra-acess button{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);border-radius:6px;padding:3px 10px;font:inherit;font-weight:700;cursor:pointer;transition:background .2s}
+.barra-acess button:hover,.barra-acess button[aria-pressed="true"]{background:#fff;color:var(--verde-escuro)}
+
+/* ---------- 4. CABEÇALHO E MENU ---------- */
+.cabecalho{position:sticky;top:0;z-index:999;background:var(--verde);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.cabecalho .container{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.logo img{height:52px;width:auto;border-radius:6px}
+.menu-botao{display:none;background:transparent;border:2px solid #fff;color:#fff;border-radius:8px;padding:8px 12px;font:inherit;font-weight:700;cursor:pointer}
+.menu-principal ul{list-style:none;display:flex;gap:18px;align-items:center}
+.menu-principal a{color:#e3f2e6;text-decoration:none;font-weight:600;font-size:.93rem;white-space:nowrap;padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.menu-principal a:hover,.menu-principal a[aria-current="page"]{color:#fff;border-bottom-color:#fff}
+.btn-cabecalho{background:var(--amarelo);color:#000;padding:10px 18px;border-radius:22px;text-decoration:none;font-weight:700;font-size:.93rem;white-space:nowrap;transition:transform .2s}
+.btn-cabecalho:hover{transform:translateY(-2px)}
+
+/* ---------- 5. RODAPÉ ---------- */
+.rodape{background:var(--verde-escuro);color:#e3f2e6;padding:48px 0 20px;margin-top:0}
+.rodape-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
+.rodape h2{color:#fff;font-size:1.05rem;margin-bottom:10px}
+.rodape a{color:#fff}
+.rodape ul{list-style:none}
+.rodape li{margin-bottom:4px}
+.rodape-final{border-top:1px solid rgba(255,255,255,.2);margin-top:28px;padding-top:16px;font-size:.85rem;text-align:center}
+.btn-topo{position:fixed;bottom:20px;right:20px;background:var(--verde);color:#fff;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.4rem;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:900;border:2px solid #fff}
+
+/* ---------- 6. COMPONENTES ---------- */
+.btn{display:inline-block;padding:13px 26px;border-radius:6px;font-weight:700;text-decoration:none;border:none;cursor:pointer;font:inherit;font-weight:700;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-amarelo{background:var(--amarelo);color:#000}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-contorno{background:transparent;color:var(--verde);border:2px solid var(--verde)}
+.grade-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grade-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.grade-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:24px;box-shadow:var(--sombra);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.1)}
+.card-destaque{border:2px solid var(--verde);border-top-width:5px;position:relative;padding-top:40px;margin-top:22px}
+.card-icone{position:absolute;top:-22px;left:24px;background:var(--verde);color:#fff;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.card-info{margin-top:12px;font-size:.88rem;color:var(--texto-suave);display:flex;flex-direction:column;gap:2px}
+.card-img{padding:0;overflow:hidden}
+.card-img img{width:100%;height:210px;object-fit:cover}
+.card-img .card-corpo{padding:20px}
+.numeros{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.numero{background:#fff;border-radius:var(--raio);padding:24px 12px;box-shadow:var(--sombra)}
+.numero strong{display:block;font-size:2.2rem;font-weight:800;color:var(--verde)}
+.numero span{color:var(--texto-suave);font-size:.95rem}
+.dado-destaque{background:var(--verde);color:#fff;border-radius:var(--raio);padding:32px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.dado-destaque strong{font-size:3rem;font-weight:800;color:var(--amarelo);line-height:1}
+.dado-destaque p{margin:0}
+.dado-destaque .fonte{color:#e3f2e6}
+.dado-destaque a{color:#fff}
+.lista-check{list-style:none}
+.lista-check li{padding-left:28px;position:relative;margin-bottom:8px}
+.lista-check li::before{content:'✔';position:absolute;left:0;color:var(--verde);font-weight:800}
+.dividido{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.dividido img{width:100%;border-radius:var(--raio);object-fit:cover;max-height:460px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:passo}
+.passo{display:flex;gap:14px;align-items:flex-start;background:#f9fdf9;border:1px solid #dfe9df;border-radius:12px;padding:16px}
+.passo .passo-num{width:42px;height:42px;min-width:42px;background:var(--verde);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.passo b{display:block;color:var(--verde-escuro)}
+.passo div span{color:var(--texto-suave);font-size:.9rem;display:block}
+.ods{display:flex;flex-wrap:wrap;gap:12px;list-style:none}
+.ods li{background:#fff;border:2px solid var(--verde);border-radius:10px;padding:10px 14px;font-weight:700;color:var(--verde-escuro)}
+.chamada{background:linear-gradient(120deg,var(--verde),var(--verde-escuro));color:#fff;border-radius:var(--raio);padding:40px;text-align:center}
+.chamada h2{color:#fff}
+.chamada p{color:#e3f2e6}
+
+/* Cabeçalho interno das páginas */
+.topo-pagina{background:linear-gradient(120deg,var(--verde),var(--verde-escuro));color:#fff;padding:56px 0 48px}
+.topo-pagina h1{color:#fff;margin-bottom:8px}
+.topo-pagina p{color:#e3f2e6;font-size:1.1rem;max-width:760px;margin:0}
+.trilha{font-size:.88rem;margin-bottom:10px}
+.trilha a{color:#fff}
+
+/* Tabelas */
+.tabela-rolagem{overflow-x:auto;border-radius:12px;box-shadow:var(--sombra)}
+table{width:100%;border-collapse:collapse;background:#fff;min-width:560px}
+caption{text-align:left;font-weight:700;padding:12px 16px;color:var(--verde-escuro);background:var(--verde-fundo)}
+th{background:var(--verde);color:#fff;text-align:left;padding:12px 16px}
+td{padding:12px 16px;border-bottom:1px solid #eee;vertical-align:top}
+tbody tr:nth-child(even){background:#fafcfa}
+.destaque-linha{background:#eef7e6!important;font-weight:600}
+
+/* ---------- 7. PÁGINAS ESPECÍFICAS ---------- */
+/* Carrossel (index) */
+.carrossel{position:relative;height:72vh;min-height:440px;overflow:hidden;background:#0f4a20}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;visibility:hidden;transition:opacity .8s ease,visibility .8s}
+.slide.ativo{opacity:1;visibility:visible}
+.slide::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.25) 70%)}
+.slide-texto{position:absolute;left:8%;top:50%;transform:translateY(-50%);color:#fff;max-width:560px;z-index:2}
+.slide-texto h1,.slide-texto h2{color:#fff;font-size:3rem;font-weight:800;margin-bottom:12px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.slide-texto p{font-size:1.15rem;color:#f0f7f0}
+/* Indicador estilo Greenpeace: número + barrinhas (como na versão anterior) */
+.carrossel-controles{position:absolute;bottom:30px;right:4%;z-index:5;display:flex;align-items:center;gap:14px}
+.indicador-num{color:#fff;font-weight:800;font-size:15px;letter-spacing:1px;min-width:26px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.indicadores{display:flex;gap:10px;align-items:center}
+.indicadores button{width:36px;height:16px;padding:0;border:none;background:transparent;cursor:pointer;display:flex;align-items:center;transition:width .3s}
+.indicadores button::before{content:'';display:block;width:100%;height:3px;border-radius:2px;background:rgba(255,255,255,.4);transition:background .3s,height .3s}
+.indicadores button[aria-current="true"]{width:48px}
+.indicadores button[aria-current="true"]::before{background:#fff;height:4px}
+
+/* Galeria */
+.galeria-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.galeria-grade figure{background:#fff;border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra)}
+.galeria-grade button{display:block;width:100%;border:none;padding:0;cursor:zoom-in;background:none}
+.galeria-grade img{width:100%;height:220px;object-fit:cover;transition:transform .4s}
+.galeria-grade button:hover img{transform:scale(1.05)}
+.galeria-grade figcaption{padding:14px 16px;font-size:.92rem}
+.galeria-grade figcaption small{display:block;color:var(--texto-suave);margin-top:4px}
+.janela-imagem{border:none;border-radius:12px;padding:0;max-width:min(92vw,1100px);background:#000}
+.janela-imagem::backdrop{background:rgba(0,0,0,.8)}
+.janela-imagem img{max-height:80vh;width:auto;margin:0 auto}
+.janela-imagem p{color:#fff;padding:12px 16px;margin:0}
+.janela-imagem button{position:absolute;top:8px;right:8px;background:var(--amarelo);color:#000;border:none;border-radius:6px;padding:8px 12px;font-weight:700;cursor:pointer}
+
+/* Mídia */
+.midia-grade{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start}
+.midia-grade video{width:100%;aspect-ratio:16/9;background:#000;border-radius:12px}
+.midia-bloco{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:20px;box-shadow:var(--sombra);margin-bottom:24px}
+.midia-bloco audio{width:100%;margin:12px 0}
+.mapa iframe{width:100%;height:420px;border:0;border-radius:12px}
+details{background:#f9fdf9;border:1px solid #dfe9df;border-radius:10px;padding:12px 16px;margin-top:12px}
+summary{cursor:pointer;font-weight:700;color:var(--verde-escuro)}
+details[open] summary{margin-bottom:8px}
+
+/* Notícias */
+.filtros{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.filtros button{background:#fff;color:var(--verde-escuro);border:2px solid var(--verde);border-radius:22px;padding:8px 16px;font:inherit;font-weight:700;cursor:pointer;transition:background .2s,color .2s}
+.filtros button[aria-pressed="true"],.filtros button:hover{background:var(--verde);color:#fff}
+.noticias-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.noticia{display:flex;flex-direction:column}
+.noticia[hidden]{display:none}
+.noticia .tag{color:var(--verde);font-weight:800;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.noticia time{color:var(--texto-suave);font-size:.85rem}
+.noticia h3{margin:6px 0 8px}
+
+/* Equipe */
+.equipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.membro{text-align:center}
+.membro .avatar{width:72px;height:72px;border-radius:50%;background:var(--verde-claro);color:var(--verde-escuro);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.4rem;margin:0 auto 10px}
+.membro span{color:var(--texto-suave);font-size:.9rem}
+
+/* ---------- 8. FORMULÁRIO ---------- */
+.form-contato{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.campo{display:flex;flex-direction:column;gap:6px}
+.campo-inteiro{grid-column:1/-1}
+.campo label{font-weight:700;color:var(--verde-escuro)}
+.campo .dica{font-size:.85rem;color:var(--texto-suave)}
+input,select,textarea{font:inherit;font-size:1rem;padding:11px 12px;border:2px solid #b9c7b9;border-radius:8px;background:#fff;color:var(--texto);transition:border-color .2s,box-shadow .2s}
+textarea{resize:none}
+input:focus,select:focus,textarea:focus{border-color:var(--verde);box-shadow:0 0 0 3px rgba(26,107,47,.25);outline:none}
+.campo-erro input,.campo-erro select,.campo-erro textarea{border-color:var(--erro);background:#fff6f5}
+.msg-erro{color:var(--erro);font-size:.88rem;font-weight:700;min-height:1.2em}
+.check{flex-direction:row;align-items:flex-start;gap:10px}
+.check input{width:20px;height:20px;margin-top:3px}
+.aviso-form{grid-column:1/-1;padding:14px 16px;border-radius:8px;font-weight:700}
+.aviso-form.sucesso{background:#e7f5e9;color:var(--verde-escuro);border:2px solid var(--verde)}
+.aviso-form.erro{background:#fdecea;color:var(--erro);border:2px solid var(--erro)}
+.rascunho-info{grid-column:1/-1;font-size:.88rem;color:var(--texto-suave);margin:0}
+
+/* ---------- 9. ALTO CONTRASTE ---------- */
+body.alto-contraste{background:#000;color:#fff}
+body.alto-contraste h1,body.alto-contraste h2,body.alto-contraste h3,body.alto-contraste label,
+body.alto-contraste summary,body.alto-contraste .passo b{color:#ffff00}
+body.alto-contraste a{color:#ffff00}
+body.alto-contraste .cabecalho,body.alto-contraste .barra-acess,body.alto-contraste .rodape,
+body.alto-contraste .topo-pagina,body.alto-contraste .chamada,body.alto-contraste .dado-destaque{background:#000;border-bottom:2px solid #ffff00}
+body.alto-contraste .secao-cinza,body.alto-contraste .card,body.alto-contraste .numero,body.alto-contraste .midia-bloco,
+body.alto-contraste .galeria-grade figure,body.alto-contraste .passo,body.alto-contraste details,body.alto-contraste table,
+body.alto-contraste td,body.alto-contraste caption,body.alto-contraste tbody tr,body.alto-contraste .ods li,
+body.alto-contraste input,body.alto-contraste select,body.alto-contraste textarea{background:#000!important;color:#fff;border-color:#fff}
+body.alto-contraste th{background:#ffff00;color:#000}
+body.alto-contraste p,body.alto-contraste span,body.alto-contraste .subtitulo,body.alto-contraste .fonte,
+body.alto-contraste time,body.alto-contraste small,body.alto-contraste li,body.alto-contraste .card-info{color:#fff}
+body.alto-contraste .btn,body.alto-contraste .btn-cabecalho,body.alto-contraste .filtros button{background:#ffff00;color:#000;border:2px solid #ffff00}
+body.alto-contraste .menu-principal a{color:#fff}
+body.alto-contraste .menu-principal a[aria-current="page"]{color:#ffff00;border-bottom-color:#ffff00}
+body.alto-contraste .slide::after{background:rgba(0,0,0,.8)}
+body.alto-contraste .badge,body.alto-contraste .avatar{background:#ffff00!important;color:#000!important}
+body.alto-contraste .numero strong,body.alto-contraste .dado-destaque strong{color:#ffff00}
+body.alto-contraste img{filter:grayscale(30%) contrast(1.1)}
+
+/* ---------- 10. RESPONSIVO ---------- */
+@media (max-width:1240px){
+  .menu-botao{display:block}
+  .menu-principal{position:absolute;top:100%;left:0;right:0;background:var(--verde-escuro);display:none;box-shadow:0 8px 16px rgba(0,0,0,.2)}
+  .menu-principal.aberto{display:block}
+  .menu-principal ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 16px}
+  .menu-principal a{display:block;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:1rem}
+  body.alto-contraste .menu-principal{background:#000}
+}
+@media (max-width:900px){
+  h1{font-size:2rem}
+  h2{font-size:1.5rem}
+  .grade-3,.grade-4,.noticias-grade,.galeria-grade{grid-template-columns:repeat(2,1fr)}
+  .numeros{grid-template-columns:repeat(2,1fr)}
+  .dividido,.midia-grade,.rodape-grid{grid-template-columns:1fr}
+  .passos{grid-template-columns:1fr}
+  .slide-texto h1,.slide-texto h2{font-size:2.2rem}
+}
+@media (max-width:620px){
+  .container{padding:0 16px}
+  .secao{padding:44px 0}
+  .grade-3,.grade-2,.grade-4,.noticias-grade,.galeria-grade,.numeros{grid-template-columns:1fr}
+  .form-contato{grid-template-columns:1fr}
+  .btn-cabecalho{display:none}
+  .logo img{height:44px}
+  .carrossel{height:78vh}
+  .slide-texto{left:6%;right:6%}
+  .slide-texto h1,.slide-texto h2{font-size:1.8rem}
+  .slide-texto p{font-size:1rem}
+  .dado-destaque{grid-template-columns:1fr;text-align:center}
+  .barra-acess .container{justify-content:center}
+  .barra-acess span{display:none}
+  .chamada{padding:28px 20px}
+  .mapa iframe{height:320px}
+}
+
+/* ---------- 11. FLUIDEZ: transições e animações suaves ---------- */
+/* Troca suave entre as páginas (Chrome e Edge) */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:sair-pagina .25s ease both}
+::view-transition-new(root){animation:entrar-pagina .35s ease both}
+@keyframes sair-pagina{to{opacity:0}}
+@keyframes entrar-pagina{from{opacity:0}}
+
+/* Conteúdo aparece suavemente ao abrir a página */
+main{animation:aparecer .5s cubic-bezier(.22,.61,.36,1) both}
+@keyframes aparecer{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* Blocos surgem conforme a pessoa rola a página (só com JavaScript ligado) */
+html.js .revelar{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+html.js .revelar.visivel{opacity:1;transform:none}
+
+/* Cabeçalho ganha sombra ao rolar */
+.cabecalho{transition:box-shadow .3s ease}
+.cabecalho.rolou{box-shadow:0 6px 18px rgba(0,0,0,.25)}
+
+/* Movimentos de passar o mouse mais suaves */
+.card,.btn,.btn-cabecalho,.galeria-grade img,.filtros button,.menu-principal a{transition-timing-function:cubic-bezier(.22,.61,.36,1)}
+.card{transition:transform .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s cubic-bezier(.22,.61,.36,1)}
+.galeria-grade img{transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+
+/* Menu do celular desliza ao abrir */
+@media (max-width:1240px){
+  .menu-principal.aberto{animation:abrir-menu .25s ease both}
+  @keyframes abrir-menu{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+}
+
+/* Quem prefere menos movimento não vê animações */
+@media (prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  main{animation:none}
+  html.js .revelar{opacity:1;transform:none}
+}

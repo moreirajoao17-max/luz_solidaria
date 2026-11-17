@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início | Luz Solidária</title>
+  <meta name="description" content="Luz Solidária: fazendas solares comunitárias e gratuitas para famílias rurais sem acesso à rede elétrica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="barra-acess">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" id="fonte-menor" aria-label="Diminuir tamanho do texto">A-</button>
+      <button type="button" id="fonte-normal" aria-label="Tamanho normal do texto">A</button>
+      <button type="button" id="fonte-maior" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" id="alto-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="container">
+      <button type="button" class="menu-botao" id="menu-botao" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+      <nav class="menu-principal" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="impacto.html">Impacto</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="midia.html">Mídia</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="orcamento_hospedagem.html">Orçamento</a></li>
+        </ul>
+      </nav>
+      <a class="btn-cabecalho" href="contato.html#parceria">Seja voluntário</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="carrossel" id="carrossel" aria-roledescription="carrossel" aria-label="Destaques do projeto">
+      <div class="slide ativo" style="background-image:url('img/campo-solar-placa.jpg')" role="group" aria-roledescription="slide" aria-label="1 de 4">
+        <div class="slide-texto">
+          <h1>Energia Solar Comunitária</h1>
+          <p>Fazendas solares isoladas levando luz gratuita para quem a rede nunca alcançou.</p>
+          <a href="projetos.html" class="btn btn-amarelo">Conheça o projeto</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('img/paineis-por-do-sol.jpg')" role="group" aria-roledescription="slide" aria-label="2 de 4">
+        <div class="slide-texto">
+          <h2>Custo zero para quem recebe</h2>
+          <p>Implantação em terrenos ociosos. A família não paga a instalação nem a conta de luz.</p>
+          <a href="sobre.html" class="btn btn-amarelo">Como funciona</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('img/familia-beneficiada.jpg')" role="group" aria-roledescription="slide" aria-label="3 de 4">
+        <div class="slide-texto">
+          <h2>Luz gratuita, pela primeira vez</h2>
+          <p>Em um raio de 0,7 km, 15 famílias deixam o lampião e ganham geladeira, estudo à noite e dignidade.</p>
+          <a href="impacto.html" class="btn btn-amarelo">Nosso impacto</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image:url('img/vista-aerea-comunidade.jpg')" role="group" aria-roledescription="slide" aria-label="4 de 4">
+        <div class="slide-texto">
+          <h2>Um modelo para o Brasil</h2>
+          <p>Começamos com 3 campos e 45 famílias. O próximo passo é levar esse modelo a cada comunidade rural sem rede.</p>
+          <a href="contato.html#parceria" class="btn btn-amarelo">Quero ajudar</a>
+        </div>
+      </div>
+      <div class="carrossel-controles">
+        <span class="indicador-num" id="indicador-num" aria-hidden="true">01</span>
+        <div class="indicadores" id="indicadores"></div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-problema">
+      <div class="container">
+        <span class="badge">O problema</span>
+        <h2 id="titulo-problema">Ainda há brasileiros vivendo sem energia elétrica</h2>
+        <p class="subtitulo">Quase todo o país tem luz em casa, mas comunidades isoladas ficam de fora, longe da rede de distribuição e dependentes de lampião ou de geradores a diesel.</p>
+        <div class="dado-destaque">
+          <strong>990 mil</strong>
+          <div>
+            <p>brasileiros estavam sem acesso à energia elétrica na Amazônia Legal, segundo levantamento do Instituto de Energia e Meio Ambiente (IEMA).</p>
+            <p class="fonte">Fonte: IEMA, divulgado pelo <a href="https://portalamazonia.com/cidades/um-milhao-de-brasileiros-estao-sem-energia-eletrica-na-amazonia-aponta-estudo/">Portal Amazônia</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-solucao">
+      <div class="container centro">
+        <span class="badge">A solução</span>
+        <h2 id="titulo-solucao">Como a Luz Solidária muda essa realidade</h2>
+        <p class="subtitulo">Fazendas solares isoladas (off-grid), com bateria central e micro-rede própria, levam energia limpa e gratuita a quem mais precisa.</p>
+        <div class="grade-3" style="text-align:left">
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">☀️</div>
+            <h3>Fazendas solares</h3>
+            <p>Cada campo tem 35 painéis em 200 m² e atende 15 famílias.</p>
+            <a href="projetos.html">Ver projetos</a>
+          </article>
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">📊</div>
+            <h3>Resultados reais</h3>
+            <p>Já são 3 campos, 105 painéis e 45 famílias com energia todos os dias.</p>
+            <a href="impacto.html">Ver impacto</a>
+          </article>
+          <article class="card card-destaque">
+            <div class="card-icone" aria-hidden="true">♿</div>
+            <h3>Inclusão de verdade</h3>
+            <p>Prioridade para famílias com pessoas com deficiência e site acessível para todos.</p>
+            <a href="acessibilidade.html">Ver acessibilidade</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-numeros">
+      <div class="container">
+        <h2 id="titulo-numeros" class="centro">O projeto em números</h2>
+        <div class="numeros">
+          <div class="numero"><strong>3</strong><span>campos solares</span></div>
+          <div class="numero"><strong>105</strong><span>painéis instalados</span></div>
+          <div class="numero"><strong>45</strong><span>famílias atendidas</span></div>
+          <div class="numero"><strong>2,1 km</strong><span>de micro-rede</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-ods">
+      <div class="container">
+        <h2 id="titulo-ods">Objetivos de Desenvolvimento Sustentável (ODS)</h2>
+        <p class="subtitulo">O projeto contribui com estes ODS da Agenda 2030 da ONU:</p>
+        <ul class="ods">
+          <li>ODS 1 – Erradicação da pobreza</li>
+          <li>ODS 4 – Educação de qualidade</li>
+          <li>ODS 7 – Energia limpa e acessível</li>
+          <li>ODS 10 – Redução das desigualdades</li>
+          <li>ODS 13 – Ação contra a mudança do clima</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="chamada">
+          <h2>Ajude a levar luz para quem nunca teve</h2>
+          <p>Seja voluntário, doe materiais ou torne sua empresa parceira.</p>
+          <a href="contato.html#parceria" class="btn btn-amarelo">Quero participar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grid">
+        <div>
+          <h2>Luz Solidária</h2>
+          <p>Energia solar comunitária e gratuita para famílias rurais que a rede elétrica nunca alcançou.</p>
+          <p><small>Projeto acadêmico de Front-End (UNICID, 2026). A Luz Solidária é uma ONG fictícia e os dados de contato são fictícios.</small></p>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="orcamento_hospedagem.html">Orçamento de hospedagem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li>E-mail: contato@luzsolidaria.org.br</li>
+            <li>Telefone: (11) 4000-0000</li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape-final">© 2026 Luz Solidária • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#conteudo" class="btn-topo" aria-label="Voltar ao topo da página">↑</a>
+  <script src="js/script.js"></script>
+</body>
+</html>
